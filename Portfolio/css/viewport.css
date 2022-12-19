@@ -1,29 +1,30 @@
+@media (max-width:1200px){
+.greeting p{
+  font-size: 15vw;
+}
+.circle{
+  display: none;
+}
+
+}
+
 @media (max-width:800px){
-  section{ 
-    width: 100%;
-    height: 100%;
-  }
-  /* page1 */
-  #page1{
+  #container_1{
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .greeting p{
-    font-size: 5rem;
-    margin-left: 10px;
-  }
-  .email{
-    display: none;
-  } 
-  /* page2 */
+  .greeting p{ font-size: 5rem;}
   #page2{
     position: relative;
     width: 100%;
     height: 100%;
   }
+  .greeting p{
+    font-size: 10vh;
+  }
   .nav_menu{
-    background: #fff;;
+    background: #fff;
   }
   .nav_menu ul li a{
     font-size: 1.7rem;
@@ -116,7 +117,8 @@
     width: 100%;
     height: 100%;
   }
-  .horizontal_slidebar{
+
+    .horizontal_slidebar{
     width: 90%;
     height: 700px;
     overflow: hidden;
@@ -196,5 +198,4 @@
     text-align: center;
   }
 
-
-}
+} 

@@ -1,4 +1,4 @@
-// delta time logo
+// 실시간 시간
 let today = new Date();   
 let year = today.getFullYear();
 let month = today.getMonth() + 1;  
@@ -9,12 +9,16 @@ let min = today.getMinutes();
 document.write('<p class="date">'+'('+ year + '.' + month + '.' + date + '&nbsp'+ hour + ':'+min +'기준) / 출처 : Airkorea' + '</p>')
 
 
+
 $(document).ready(function(){
 
-    // search bar toggle
-    $(".magnifying >i").click(function(){           
-        $("togle").toggleClass("emphasized");
+    //search bar toggle
+    $(".fa-magnifying-glass").click(function(){
+        $('.viewport_side2').toggleClass("active")
     });
+    // $(".fa-magnifying-glass").click(function(){
+    //     $(this).toggleClass("active");
+    //   });
 
     // viewport menu toggle
     $('.fa-bars').click(function(){
@@ -26,7 +30,7 @@ $(document).ready(function(){
     });
 
     $(function(){
-        $("#rel_site").on("change", function(){
+        $("#rel_site").on("change", function(){  
             $(".txt").text($(this).val());
         });
     });

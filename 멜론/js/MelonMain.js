@@ -1,23 +1,23 @@
 $(document).ready(function(){
   // drop down menu
-  $('.nav_menu i').mouseenter(function(){
-    $('.nav_menu ul').slideDown();
+  $('.Name').mouseenter(function(){
+    $('.NavMenu ul').slideDown();
   });
-  $('.nav_menu').mouseleave(function(){
-    $('.nav_menu ul').slideUp();
+  $('.NavMenu').mouseleave(function(){
+    $('.NavMenu ul').slideUp();
   });
 
 
   // auto slider images
   setInterval(function(){ 
-    $('.img_board >ul>li:first-child').fadeOut() 
+    $('.NewAlbum_image >ul>li:first-child').fadeOut() 
     .next().fadeIn().end(1000) 
-    .appendTo('.img_board >ul'); },4000);
+    .appendTo('.NewAlbum_image >ul'); },4000);
 
   setInterval(function(){ 
-    $('.txt_board >ul>li:first-child').fadeOut('') 
+    $('.NewAlbum_text >ul>li:first-child').fadeOut('') 
     .next().fadeIn().end(100) 
-    .appendTo('.txt_board >ul'); },4000);
+    .appendTo('.NewAlbum_text >ul'); },4000);
 
 
   // viewport menu set
@@ -28,7 +28,7 @@ $(document).ready(function(){
     $('.viewport_side').animate({left:'-900px'});
   });
 
-    // top rolling list
+    //top rolling list
   $(document).ready(function(){
     var height =  $(".chart_silder").height();
     var num = $(".rolling li").length;

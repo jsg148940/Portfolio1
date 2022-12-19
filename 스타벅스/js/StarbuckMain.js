@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // mouse wheel auto scroll
+  // 오토 스크롤
   $(".container").each(function () {
       $(this).on("mousewheel DOMMouseScroll", function (e) {
           e.preventDefault();
@@ -29,17 +29,16 @@ $(document).ready(function() {
       });
   });
 
-
-  // drop menu set
+  // 드롭메뉴
   var $firstmenu = $('header'),
   $header = $('header');
   $firstmenu.mouseenter(function(){
     $header.stop().animate({height:'360px'},100);
+    
   })
   .mouseleave(function(){ 
     $header.stop().animate({height:'100px'},100);
   })
-
 
   // back to top button set
   const backToTop = document.getElementById('backtotop');
